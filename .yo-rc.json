@@ -1,0 +1,19 @@
+{
+  "generator-plugin-wp": {
+    "name": "WIR",
+    "homepage": "https://github.com",
+    "description": "A radical new plugin for WordPress!",
+    "version": "0.0.1",
+    "author": "WPGuru4u",
+    "authoremail": "wpguru4u@gmail.com",
+    "authorurl": "https://wpguru4u@gmail.com",
+    "license": "GPLv2",
+    "slug": "wir",
+    "classname": "WIR",
+    "mainclassname": "WIR",
+    "classprefix": "WIR_",
+    "prefix": "wir",
+    "year": 2017,
+    "currentVersionWP": "4.7.2"
+  }
+}

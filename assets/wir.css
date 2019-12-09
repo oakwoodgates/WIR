@@ -1,0 +1,47 @@
+.slick-prev:before, .slick-next:before {
+	color:#db4d65;
+}
+button.slick-arrow:active {
+	padding: 0;
+	border-top: 0;
+}
+a.slide_img_link{
+	width: 100%;
+	float: left;
+	text-align: center;
+	font-weight: bold;
+}
+a.slide_img_name {
+	width: 100%;
+	float: left;
+	text-align: center;
+	font-weight: bold;
+}
+.slide_img_link img {
+	width: 150px;
+	margin: 0 auto 10px !important;
+	text-align: center;
+	float: none!important;
+
+}
+#invites-personal-li {
+	display: none;
+}
+#item-header-content .activity{
+	display: none;
+}
+
+.wir_list_slider_class.slick-slider {
+	max-width: 90%;
+    margin: 0 auto;
+} 
+.wir_list_slider_class
+{
+	max-height:200px;
+}
+
+@media (max-width: 768px) {
+	.wir_list_slider_class .slick-list {
+		max-width: 600px;
+	}
+}
