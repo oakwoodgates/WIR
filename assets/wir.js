@@ -13,9 +13,9 @@ window.wir_flist_ajax = ( function( window, document, wir_flist_jq ){
 	app.form_handler = function( evt ){
 		evt.preventDefault();
 
-		var gid   	= jq( this ).parent().attr( 'id' ),
-			l_nonce = jq( this ).attr( 'href' ),
-			thelink = jq( this );
+		var gid   	= jQuery( this ).parent().attr( 'id' ),
+			l_nonce = jQuery( this ).attr( 'href' ),
+			thelink = jQuery( this );
 			app.$thelink = thelink;
 
 			gid = gid.split( '-' );
@@ -93,9 +93,9 @@ window.wir_floc_ajax = ( function( window, document, wir_floc_jq ){
 	app.form_handler = function( evt ){
 		evt.preventDefault();
 
-		var gid   	= jq( this ).parent().attr( 'id' ),
-			l_nonce = jq( this ).attr( 'href' ),
-			thelink = jq( this );
+		var gid   	= jQuery( this ).parent().attr( 'id' ),
+			l_nonce = jQuery( this ).attr( 'href' ),
+			thelink = jQuery( this );
 			app.$thelink = thelink;
 
 			gid = gid.split( '-' );
@@ -166,7 +166,6 @@ window.wir_clist_ajax = ( function( window, document, wir_clist_jq ){
 	app.cache = function(){
 		app.$ajax_form = wir_clist_jq( 'a.wir_clist' );
 	};
-
 	app.init = function(){
 		app.cache();
 		app.$ajax_form.on( 'click', app.form_handler );
@@ -175,9 +174,9 @@ window.wir_clist_ajax = ( function( window, document, wir_clist_jq ){
 	app.form_handler = function( evt ){
 		evt.preventDefault();
 
-		var gid   	= jq( this ).parent().attr( 'id' ),
-			l_nonce = jq( this ).attr( 'href' ),
-			thelink = jq( this );
+		var gid   	= jQuery( this ).parent().attr( 'id' ),
+			l_nonce = jQuery( this ).attr( 'href' ),
+			thelink = jQuery( this );
 			app.$thelink = thelink;
 
 			gid = gid.split( '-' );
@@ -236,9 +235,9 @@ window.wir_floc_ajax = ( function( window, document, wir_floc_jq ){
 	app.form_handler = function( evt ){
 		evt.preventDefault();
 
-		var gid   	= jq( this ).parent().attr( 'id' ),
-			l_nonce = jq( this ).attr( 'href' ),
-			thelink = jq( this );
+		var gid   	= jQuery( this ).parent().attr( 'id' ),
+			l_nonce = jQuery( this ).attr( 'href' ),
+			thelink = jQuery( this );
 			app.$thelink = thelink;
 
 			gid = gid.split( '-' );
@@ -308,9 +307,9 @@ window.wir_cloc_ajax = ( function( window, document, wir_cloc_jq ){
 	app.form_handler = function( evt ){
 		evt.preventDefault();
 
-		var gid   	= jq( this ).parent().attr( 'id' ),
-			l_nonce = jq( this ).attr( 'href' ),
-			thelink = jq( this );
+		var gid   	= jQuery( this ).parent().attr( 'id' ),
+			l_nonce = jQuery( this ).attr( 'href' ),
+			thelink = jQuery( this );
 			app.$thelink = thelink;
 
 			gid = gid.split( '-' );
@@ -448,6 +447,7 @@ jQuery(document).ready(function( $ ) {
 function ConfigMapLocation() {
 	jQuery("label[for='wir_location_title']").html("Location/Place");
 	var wir_location_title = jQuery("#wir_location_title");
+
 	if(wir_location_title.length > 0) {
 		let content =	"<div class='cmb-row'>" +
 						"<div class='cmb-th'>" +
