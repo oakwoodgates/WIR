@@ -249,7 +249,7 @@ final class WIR {
 	 * Load required files
 	 */
 	public function load_extension() {
-		
+
 		$files = array(
 			'includes/functions.php',
 			'includes/template-tags.php',
@@ -315,19 +315,13 @@ final class WIR {
 	}
 
 	static function enqueue( $hook ) {
-		wp_enqueue_script( 'slick_js', '//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js', array( 'jquery' ), '1.6.0', true );
-
 		wp_enqueue_script( 'wir_js', self::url( 'assets/wir.js' ), array( 'jquery' ), time(), true );
 		wp_enqueue_script( 'maps_js', self::url( 'assets/jquery.geocomplete.js' ), array( 'jquery' ), time(), true );
 		wp_localize_script( 'wir_js', 'wir_obj', array(
 			'ajax_url' => admin_url( 'admin-ajax.php' ),
 			'nonce'	   => wp_create_nonce( 'wir_a' ),
 		) );
-
-		wp_enqueue_style( 'slick_css', '//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css' );
-		wp_enqueue_style( 'slick_theme', '//cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css' );
 		wp_enqueue_style( 'wir_plugin_css', self::url( 'assets/wir.css' ) );
-
 	}
 
 	/**
