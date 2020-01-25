@@ -406,43 +406,6 @@ window.webdev_ajax = ( function( window, document, wd ){
 
 })( window, document, jQuery );
 
-jQuery(document).ready(function( $ ) {
-	$('.wir_list_slider_class').slick({
-	  autoplay: true,
-	  autoplaySpeed: 4000,
-	//  centerMode: true,
-	//  centerPadding: '30px',
-	  slidesToShow: 4,
-	  slidesToScroll: 1,
-	  responsive: [
-	    {
-	      breakpoint: 800,
-	      settings: {
-	        slidesToShow: 3,
-	        slidesToScroll: 1,
-	        infinite: true,
-	      }
-	    },
-	    {
-	      breakpoint: 600,
-	      settings: {
-	        slidesToShow: 3,
-	        slidesToScroll: 1
-	      }
-	    },
-	    {
-	      breakpoint: 480,
-	      settings: {
-	        slidesToShow: 2,
-	        slidesToScroll: 1
-	      }
-	    }
-	    // You can unslick at a given breakpoint now by adding:
-	    // settings: "unslick"
-	    // instead of a settings object
-	  ]
-	});
-});
 
 function ConfigMapLocation() {
 	jQuery("label[for='wir_location_title']").html("Location/Place");

@@ -238,10 +238,10 @@ final class WIR {
 	function favorite_groups_initiate(){
 		//	$favorite_groups =  WIR_Favorites::get_instance();
 		if ( bp_is_active( 'groups' ) ) {
-			$this->favorite_lists 		= new WIR_Favorite_Lists();
-			$this->favorite_locations 	= new WIR_Favorite_Locations();
-			$this->clone_list 			= new WIR_Clone_List();
-			$this->clone_location 		= new WIR_Clone_Location();
+//			$this->favorite_lists 		= new WIR_Favorite_Lists();
+//			$this->favorite_locations 	= new WIR_Favorite_Locations();
+//			$this->clone_list 			= new WIR_Clone_List();
+//			$this->clone_location 		= new WIR_Clone_Location();
 		}
 	}
 
@@ -321,7 +321,6 @@ final class WIR {
 			'ajax_url' => admin_url( 'admin-ajax.php' ),
 			'nonce'	   => wp_create_nonce( 'wir_a' ),
 		) );
-		wp_enqueue_style( 'wir_plugin_css', self::url( 'assets/wir.css' ) );
 	}
 
 	/**
